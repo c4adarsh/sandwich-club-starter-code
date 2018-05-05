@@ -114,7 +114,7 @@ public class DetailActivity extends AppCompatActivity {
                 displayIngredients.append(eachIngredient);
                 displayIngredients.append("\n");
             }
-            mIngredientsTextView.setText(displayIngredients.subSequence(0,displayIngredients.length()-2));
+            mIngredientsTextView.setText(displayIngredients.subSequence(0,displayIngredients.length()-1));
         } else {
             mIngredientsTextView.setVisibility(View.GONE);
             mIngredientsHeaderTextView.setVisibility(View.GONE);
@@ -126,7 +126,7 @@ public class DetailActivity extends AppCompatActivity {
                 displayAlsoKnownAs.append(eachIngredient);
                 displayAlsoKnownAs.append("\n");
             }
-            mAlsoKnownAsTextView.setText(displayAlsoKnownAs.subSequence(0,displayAlsoKnownAs.length()-2));
+            mAlsoKnownAsTextView.setText(displayAlsoKnownAs.subSequence(0,displayAlsoKnownAs.length()-1));
         } else {
             mAlsoKnownAsTextView.setVisibility(View.GONE);
             mAlsoKnownAsHeaderTextView.setVisibility(View.GONE);
